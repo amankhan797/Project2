@@ -1,0 +1,251 @@
+*{
+    font-family: 'Nunito', sans-serif;;
+}
+body {
+    padding-top: 56px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar {
+    background-color: #191B18;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: #191B18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    width: 0;
+    background-color: #B040AE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s;
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    /* Set default text color */
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    color: #B040AE !important;
+    /* Set the color you want on hover or when the link is active */
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#navbtns {
+    border-color: transparent !important;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 150px;
+    background-color: #ab48aa;
+    transition: background-color 0.3s ease;
+}
+
+#navbtns:active,
+#navbtns:hover {
+    background-color: #be18bb;
+}
+.nav-span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.banner-grp {
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+@media (width <=620px) {
+    .banner {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+
+    34% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
+.banner-grp img {
+    -webkit-user-drag: none;
+    border: 2px #130613 solid;
+    margin-top: -180px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: morph 4s linear infinite;
+}
+
+#bn54 {
+    width: auto;
+    height: 40px;
+    margin-left: 40px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 1;
+    background-color: #ff1e1e;
+}
+
+#bn54 .bn54span {
+    padding: 0px 10px 0px 10px;
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+#bn54:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+}
+
+#bn54:hover #bn54span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.card-parent {
+    height: 100vh;
+    width: 97vi;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.course{
+    padding: 20px;
+    margin-top: 30px;
+    width: 85%;
+    background-color: #20221F;
+    border-radius: 15px;
+}
+@keyframes underlineColorChange {
+    0% {
+        border-color: #ff2dfb;
+    }
+    50%{
+        border-color: #ff57fc
+    }
+    100% {
+        border-color: #ff70fd;
+    }
+}
+
+.course h2 {
+    color: #EFF1EF;
+    /* padding: 20px 0px 0px 20px; */
+    border-bottom: 3px solid #B040AE;
+    padding-bottom: 13px;
+    animation: underlineColorChange 1s ease-in-out infinite alternate;
+}
+
+/* profilecard */

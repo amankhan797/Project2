@@ -1,0 +1,274 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    padding-top: 56px;
+    display: flex;
+    justify-content: center;
+    background-color: #FEF6FD;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar {
+    background-color: #191B18;
+}
+
+.navbar-nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    width: 0;
+    background-color: #B040AE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s;
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    /* Set default text color */
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    color: #B040AE !important;
+    /* Set the color you want on hover or when the link is active */
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#navbtns {
+    border-color: transparent !important;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #ab48aa;
+    transition: background-color 0.3s ease;
+}
+
+#navbtns:active,
+#navbtns:hover {
+    background-color: #be18bb;
+}
+
+.nav-span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.container {
+    padding: 0%;
+    margin: 0%;
+    /* background-color: #27ae60; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-top: 15px;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.course-info {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.course-logo {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: cover;
+    margin-bottom: 7px;
+}
+
+.half-star-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 17px;
+    /* Half of the original width */
+    height: 35px;
+    /* Adjust the height as needed */
+}
+
+.card-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #B040AE;
+    margin-bottom: 10px;
+}
+
+#coursebtn {
+    border-color: transparent !important;
+    display: flex;
+    padding: 15px 40px 15px 40px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #ab48aa;
+    transition: background-color 0.3s ease;
+}
+
+#coursebtn:active,
+#coursebtn:hover {
+    background-color: #be18bb;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+#course-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+
+#course-container h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: black;
+}
+
+#course-container li {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.course-section {
+    background-color: #E9BEE9;
+    padding: 10px 50px 10px 50px;
+    width: 100%; /* Full width on small screens */
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    /* Apply styles only for screens 768px and above */
+    .course-section {
+        width: 45%;
+    }
+}
+
+h2 {
+    color: #3498db;
+}
+
+.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist li::before {
+    content: '\2713';
+    color: #27ae60;
+    /* Checkmark color */
+    display: inline-block;
+    font-weight: bolder;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#highlights-container {
+    flex-wrap: wrap;
+    /* padding: 0%; */
+    justify-content: space-between;
+    background-color: #27ae60;
+    /* margin: 15px 0px 15px 0px; */
+    display: flex;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.box>div {
+    flex: 1;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: calc(33.33% - 40px);
+    }
+}
