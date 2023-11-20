@@ -10,6 +10,7 @@ body {
     padding-top: 56px;
     overflow-x: hidden;
     background-color: #F3EEEE;
+    justify-content: center;
 }
 
 .navbar-nav {
