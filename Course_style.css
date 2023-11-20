@@ -3,15 +3,22 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
     padding-top: 56px;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
     background-color: #F3EEEE;
 }
 
 .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
+
 }
 
 .navbar {
@@ -54,6 +61,12 @@ body {
     /* Set the color you want on hover or when the link is active */
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .btn:focus,
 .btn:active {
     outline: none !important;
@@ -82,9 +95,9 @@ body {
 }
 
 .container {
-    padding: 0%;
-    margin: 0%;
-    /* background-color: #27ae60; */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,12 +171,14 @@ body {
     height: 35px;
     /* Adjust the height as needed */
 }
-#enroll-button-desktop{
+
+#enroll-button-desktop {
     display: flex;
     align-items: baseline;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 #coursebtn {
     border-color: transparent !important;
     display: flex;
@@ -389,12 +404,18 @@ h2 {
 
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+
     .card {
         width: 100%;
     }
-    #enroll-button-desktop{
+
+    #enroll-button-desktop {
         display: none;
     }
+
     .bottom-navbar {
         position: fixed;
         bottom: 0;
@@ -407,4 +428,55 @@ h2 {
         align-items: center;
         padding: 10px;
     }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #191B18;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.footer p {
+    margin-bottom: 0;
+}
+.social-icons {
+    margin-bottom: 10px;
+}
+.social-icons a {
+    font-size: 2rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social-icons .fa-facebook:hover {
+    color: #4267B2;
+}
+.social-icons .fa-twitter:hover {
+    color: #1DA1F2;
+}
+.social-icons .fa-linkedin:hover {
+    color: #0A66C2;
+}
+.social-icons .fa-instagram:hover {
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.social-icons .fa-youtube:hover {
+    color: #FF0000;
+}
+.social-icons .fa-whatsapp:hover {
+    color: #25D366;
+}
+.social-icons .fa-telegram:hover {
+    color: #008888;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
