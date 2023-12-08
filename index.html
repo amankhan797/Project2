@@ -13,53 +13,56 @@
 </head>
 
 <body>
-
+    <div class="container-fluid" id="body">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">Your Logo</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <a class="navbar-brand" href="#">Your Logo</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto"> <!-- mx-auto for centering -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="course.html">COURSE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TEST</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PORTFOLIO</a>
-                </li>
-            </ul>
-            <div class="btn-group" role="group">
-                <button type="button" class="btn" style="width: 100px;" id="navbtns"><span class="nav-span">LOGIN</span></button>
-                <!-- <button type="button" class="btn" id="navbtns"><span class="nav-span">SIGN IN</span></button> -->
+            <button class="navbar-toggler x-md-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">COURSE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TEST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">QUIZ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO</a>
+                    </li>
+                </ul>
+                <!-- <div class="btn-group" role="group">
+            <button type="button" class="btn" style="width: 100px;" id="navbtns"><span class="nav-span">LOGIN</span></button>
+        </div> -->
             </div>
-        </div>
-
-    </nav>
+        </nav>
+    </header>
 
     <!-- Page Content -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="banner">
             <img src="Images/Banner.webp" alt="Collage-picture" style="width: 100%; height: auto; object-fit: cover; -webkit-user-drag: none; border-bottom: 2px solid #000;">
         </div>
         <div class="banner-grp">
-            <img src="Images/IMG_20231112_214905.JPG" alt="DP">
+            <img src="Images/ADITYA.png" alt="DP">
             <div>
-                <h2 style="margin-top: 20px; color: #EFF1EF; font-weight:600;">Aditya [COEP]</h2>
-                <h5 style="color: #EFF1EF;">Just A Boy With A Dream! Love To Capture Every Moment Of My Life And Store
+                <h2 style="margin-top: 20px; color: #000000; font-weight:600;">Aditya [COEP]</h2>
+                <h5 style="color: #000000;">Just A Boy With A Dream! Love To Capture Every Moment Of My Life And Store
                     Them In The Form Of Vlogs. Persuing B.Tech From COEP Tech University In Manufacturing Science And
                     Engineering.</h5>
                 <div style="display: flex; align-items:start; justify-content: space-between;">
                     <h4 id="subscriberCount"
-                        style="color: #EFF1EF; margin-top: 10px; font-size: 1.8rem; font-weight: 600;">Fetching...</h4>
+                        style="color: #000000; margin-top: 10px; font-size: 1.8rem; font-weight: 600;">Fetching...</h4>
                     <button class="btn" id="bn54" onclick="openYouTubeInNewTab()">
                         <span class="bn54span">Subscribe Now!</span>
                     </button>
@@ -70,18 +73,18 @@
             <h2 id="changingUnderline">COURSE</h2>
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; margin-top: 20px;" >
 
-                <div class="card" style="width: 90%; border-color: white;">
+                <div class="card" style="width: 90%; border-color: rgb(0, 0, 0);">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="Images/Mentor.webp" class="card-img" alt="img1" style="height: 100%; object-fit: cover;">
                         </div>
-                        <div class="col-md-8" style="background-color: #191B18; border-radius: 2px;">
+                        <div class="col-md-8" style="background-color: #F3EEEE; border-radius: 2px;">
                             <div class="card-body">
-                                <h3 class="card-title" style="color: white; font-weight: bold;">Mentorship program</h3>
-                                <p class="card-text" style="color: white; font-size: 1.1rem;">Join our Mentorship Program for personalized guidance on securing admissions to top colleges and excelling in MHT-CET exams. Our experienced mentors are here to support you on your academic journey, ensuring success and a bright future. Let's work together to achieve your goals!<p>
+                                <h3 class="card-title" style="color: rgb(0, 0, 0); font-weight: bold;">Mentorship program</h3>
+                                <p class="card-text" style="color: rgb(0, 0, 0); font-size: 1.1rem;">Join our Mentorship Program for personalized guidance on securing admissions to top colleges and excelling in MHT-CET exams. Our experienced mentors are here to support you on your academic journey, ensuring success and a bright future. Let's work together to achieve your goals!<p>
                                 <a href="/">Read more ></a>
                                 <div style="display: flex; align-items: baseline; justify-content: start; gap: 50px;">
-                                    <p style="font-size: 1.4rem; font-weight: 600; color: #B040AE;">Price : <span>₹1499</span></p>
+                                    <p style="font-size: 1.4rem; font-weight: 600; color: #684fe2;">Price : <span>₹1499</span></p>
                                     <button class="btn" id="navbtns"><span class="nav-span">APPLY</span></button>
                                 </div>
                             </div>
@@ -94,13 +97,13 @@
                         <div class="col-md-4">
                             <img src="Images/counseling.png" class="card-img" alt="img1" style="height: 100%; object-fit: cover;">
                         </div>
-                        <div class="col-md-8" style="background-color: #191B18; border-radius: 2px;">
+                        <div class="col-md-8" style="background-color: #F3EEEE; border-radius: 2px;">
                             <div class="card-body">
-                                <h3 class="card-title" style="color: white; font-weight: bold;">Counseling program</h3>
-                                <p class="card-text" style="color: white; font-size: 1.1rem;">Join our Mentorship Program for personalized guidance on securing admissions to top colleges and excelling in MHT-CET exams. Our experienced mentors are here to support you on your academic journey, ensuring success and a bright future. Let's work together to achieve your goals!<p>
+                                <h3 class="card-title" style="color: rgb(0, 0, 0); font-weight: bold;">Counseling program</h3>
+                                <p class="card-text" style="color: rgb(0, 0, 0); font-size: 1.1rem;">Join our Mentorship Program for personalized guidance on securing admissions to top colleges and excelling in MHT-CET exams. Our experienced mentors are here to support you on your academic journey, ensuring success and a bright future. Let's work together to achieve your goals!<p>
                                 <a href="/">Read more ></a>
                                 <div style="display: flex; align-items: baseline; justify-content: start; gap: 50px;">
-                                    <p style="font-size: 1.4rem; font-weight: 600; color: #B040AE;">Price : <span>₹999</span></p>
+                                    <p style="font-size: 1.4rem; font-weight: 600; color: #684fe2;">Price : <span>₹999</span></p>
                                     <button class="btn" id="navbtns"><span class="nav-span">APPLY</span></button>
                                 </div>
                             </div>
@@ -114,6 +117,7 @@
             <h2>TEST'S</h2>
         </div>
     </div>
+</div>
 
 
 

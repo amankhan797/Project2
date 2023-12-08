@@ -1,25 +1,27 @@
 *{
     font-family: 'Nunito', sans-serif;;
 }
-body {
-    padding-top: 56px;
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 0px;
+    overflow-x: hidden;
+    background-color: #F3EEEE;
+    justify-content: center;
 }
-
 .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
+
 }
 
 .navbar {
     background-color: #191B18;
-}
-
-.container-fluid {
-    margin: 0;
-    padding: 0;
-    background-color: #191B18;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .navbar-nav a {
@@ -33,7 +35,7 @@ body {
     display: block;
     height: 2.5px;
     width: 0;
-    background-color: #B040AE;
+    background-color: #8775E1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,8 +56,14 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item.active .nav-link {
-    color: #B040AE !important;
+    color: #8775E1 !important;
     /* Set the color you want on hover or when the link is active */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .btn:focus,
@@ -71,33 +79,41 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    width: 150px;
-    background-color: #ab48aa;
+    background-color: #8775E1;
     transition: background-color 0.3s ease;
 }
 
 #navbtns:active,
 #navbtns:hover {
-    background-color: #be18bb;
+    background-color: #684fe2;
 }
-.nav-span{
+
+.nav-span {
     font-size: 1.1rem;
     font-weight: 600;
 }
+.container {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .banner {
     display: flex;
     justify-content: center;
     height: 40vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .banner-grp {
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 80%;
 }
 
 @media (width <=620px) {
@@ -108,7 +124,7 @@ body {
     }
 }
 
-@keyframes morph {
+/* @keyframes morph {
 
     0%,
     100% {
@@ -122,7 +138,7 @@ body {
     67% {
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     }
-}
+} */
 
 .banner-grp img {
     -webkit-user-drag: none;
@@ -132,7 +148,7 @@ body {
     height: 190px;
     border-radius: 50%;
     object-fit: cover;
-    animation: morph 4s linear infinite;
+    /* animation: morph 4s linear infinite; */
 }
 
 #bn54 {
@@ -222,26 +238,26 @@ body {
 }
 
 .course{
+    width: 100%;
     padding: 20px;
     margin-top: 30px;
-    width: 85%;
-    background-color: #20221F;
+    background-color: rgba(135, 117, 225, 0.60);
     border-radius: 15px;
 }
 @keyframes underlineColorChange {
     0% {
-        border-color: #ff2dfb;
+        border-color: #684fe2;
     }
     50%{
-        border-color: #ff57fc
+        border-color: #593ceb
     }
     100% {
-        border-color: #ff70fd;
+        border-color: #6f57e6;
     }
 }
 
 .course h2 {
-    color: #EFF1EF;
+    color: #000000;
     /* padding: 20px 0px 0px 20px; */
     border-bottom: 3px solid #B040AE;
     padding-bottom: 13px;

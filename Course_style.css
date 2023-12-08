@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 56px 0px 0px 0px;
+    padding: 45px 0px 0px 0px;
     overflow-x: hidden;
     background-color: #F3EEEE;
     justify-content: center;
@@ -126,6 +126,11 @@
 .card-body {
     padding: 20px;
 }
+.card-body-head{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
 
 .card-title {
     color: black;
@@ -234,7 +239,7 @@
 }
 
 h2 {
-    color: #3498db;
+    color: black;
 }
 
 .checklist {
@@ -428,6 +433,12 @@ h2 {
         justify-content: space-around;
         align-items: center;
         padding: 10px;
+    }
+    .card-body-head{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;  */
+        align-items:start;
     }
 }
 .footer {
