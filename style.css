@@ -264,4 +264,76 @@
     animation: underlineColorChange 1s ease-in-out infinite alternate;
 }
 
-/* profilecard */
+/* Social media icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.left-text {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #191B18;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.footer p {
+    margin-bottom: 0;
+}
+.social-icons {
+    margin-bottom: 10px;
+}
+.social-icons a {
+    font-size: 2rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social-icons .fa-facebook:hover {
+    color: #4267B2;
+}
+.social-icons .fa-twitter:hover {
+    color: #1DA1F2;
+}
+.social-icons .fa-linkedin:hover {
+    color: #0A66C2;
+}
+.social-icons .fa-instagram:hover {
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.social-icons .fa-youtube:hover {
+    color: #FF0000;
+}
+.social-icons .fa-whatsapp:hover {
+    color: #25D366;
+}
+.social-icons .fa-telegram:hover {
+    color: #008888;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
