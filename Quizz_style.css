@@ -1,0 +1,53 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    scrollbar-width: thin;
+    
+}
+body{
+    background-color: #F3EEEE;
+
+}
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #684fe2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8775E1;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #F3EEEE;
+}
+
+#body {
+    box-sizing: border-box;
+    padding: 0%;
+    height: 100vh;
+    background-color: #F3EEEE;
+
+
+}
+#headDiv{
+    margin: 15px 0 15px 0;
+    padding: 15px;
+    display: flex;
+    background-color: #b0a1f3; 
+    justify-content: space-between; 
+    border-radius: 15px;
+}
+#timer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:end;
+}
+@media (max-width: 767px) {
+    #headDiv{
+        flex-direction: column;
+    }
+  }
